@@ -10,7 +10,7 @@
     <!-- Page Content Wrapper -->
     <div class="wrapper">
         <!-- Header -->
-        <header>
+        <header id="header">
             <div class="navbar-container">
                 <div class="logo">
                     <h1>My Website</h1>
@@ -20,7 +20,14 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#services" class="dropbtn">Services</a>
+                            <div class="dropdown-content">
+                                <a href="web-design.html">Web Design</a>
+                                <a href="animation.html">Animation</a>
+                                <a href="logo-video-design.html">Logo & Video Design</a>
+                            </div>
+                        </li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -28,9 +35,60 @@
             </div>
         </header>
 
-        <!-- Slideshow -->
+        <!-- Slideshow Container -->
         <div class="slideshow-container">
-            <!-- Slides will be inserted here by JavaScript -->
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/1.jpg" alt="Slide 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/2.jpg" alt="Slide 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/3.jpg" alt="Slide 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/4.jpg" alt="Slide 4">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/5.jpg" alt="Slide 5">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/6.jpg" alt="Slide 6">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/7.jpg" alt="Slide 7">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/8.jpg" alt="Slide 8">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/9.jpg" alt="Slide 9">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/10.jpg" alt="Slide 10">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/11.jpg" alt="Slide 11">
+            </div>
+            <div class="mySlides fade">
+                <img src="images/Slide Show/Slide Show Use/12.jpg" alt="Slide 12">
+            </div>
+        </div>
+
+        <!-- Slide Show Icons -->
+        <div class="slide-show-icons">
+            <img src="path/to/icon1.png" alt="Icon 1" class="icon-item">
+            <img src="path/to/icon2.png" alt="Icon 2" class="icon-item">
+            <img src="path/to/icon3.png" alt="Icon 3" class="icon-item">
+        </div>
+
+        <!-- Freelancer Section -->
+        <div id="freelancer" class="freelancer">
+            <img src="images/Logo 1.png" alt="Freelancer Logo" class="freelancer-logo">
+            <div class="decorative-line"></div>
+            <div class="info-item">Freelancer</div>
+            <div class="decorative-line"></div>
+            <div class="info-item">Joshua Josef Mort</div>
         </div>
 
         <!-- Main Content -->
@@ -47,25 +105,35 @@
         </footer>
     </div> <!-- End of wrapper -->
 
-    <!-- Slideshow Script -->
+    <!-- Contact Box -->
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+            
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Slideshow and Navbar Script -->
     <script>
-        const slideshowContainer = document.querySelector('.slideshow-container');
-        const baseUrl = "images/Slide Show/Slide Show Use/";
-        const totalSlides = 12;
-
-        for (let i = 1; i <= totalSlides; i++) {
-            const slide = document.createElement('div');
-            slide.className = 'mySlides fade';
-            slide.innerHTML = `<img src="${baseUrl}${i}.jpg" alt="Slide ${i}">`;
-            slideshowContainer.appendChild(slide);
-        }
-
         let slideIndex = 0;
         showSlides();
 
         function showSlides() {
+            let i;
             let slides = document.getElementsByClassName("mySlides");
-            for (let i = 0; i < slides.length; i++) {
+            for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             slideIndex++;
@@ -73,6 +141,19 @@
             slides[slideIndex-1].style.display = "block";
             setTimeout(showSlides, 5000); // Change image every 5 seconds
         }
+
+        // Navbar scroll behavior
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('header');
+            var freelancer = document.getElementById('freelancer');
+            var freelancerTop = freelancer.getBoundingClientRect().top;
+            
+            if (freelancerTop <= 0) {
+                header.classList.add('fixed-top');
+            } else {
+                header.classList.remove('fixed-top');
+            }
+        });
     </script>
 </body>
 </html>
