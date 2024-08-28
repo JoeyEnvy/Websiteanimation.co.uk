@@ -11,14 +11,15 @@ body {
     padding: 0;
     height: 100vh;
     overflow: auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Page Content Wrapper */
 .wrapper {
-    position: relative; /* For positioning of pseudo-element */
-    margin: 20px; /* Space between the border and the viewport */
-    height: calc(100% - 40px); /* Adjust height to account for the margin */
-    max-width: calc(100% - 40px); /* Adjust width to account for the margin */
+    position: relative;
+    margin: 20px;
+    height: calc(100% - 40px);
+    max-width: calc(100% - 40px);
     overflow: auto;
 }
 
@@ -30,40 +31,80 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 5px solid #07407b; /* Border color */
-    pointer-events: none; /* Allows clicking through the border */
-    z-index: 1; /* Ensures the border is above the content but below the header */
+    border: 5px solid #07407b;
+    pointer-events: none;
+    z-index: 1;
 }
 
 /* Header */
 header {
     background-color: #333;
     color: white;
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-    position: relative; /* Changed to relative */
-    z-index: 2; /* Ensures header is above the border */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Slideshow */
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    margin-top: 60px; /* Adjust margin for header height */
-    z-index: 1; /* Ensures slideshow is within the border */
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
 }
 
 /* Main Content */
 main {
-    padding: 20px; /* Space between content and border */
-    position: relative; /* Added for z-index */
-    z-index: 1; /* Ensures main content is within the border */
+    padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 main h2 {
     font-size: 28px;
     color: #333;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 15px;
 }
 
 main p {
@@ -80,4 +121,5 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
     width: 100%;
+    font-size: 14px;
 }
