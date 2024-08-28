@@ -8,51 +8,56 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <h1>My Website</h1>
+    <!-- Wrapper for the border -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h1>My Website</h1>
+            </div>
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#templates">Templates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Slideshow -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/slide1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/slide3.jpg" style="width:100%">
+            </div>
         </div>
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#templates">Templates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Slideshow -->
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-            <img src="images/slide1.jpg" style="width:100%">
-        </div>
+        <!-- Main Content -->
+        <main>
+            <section id="home">
+                <h2>Welcome to My Website</h2>
+                <p>This is a simple website hosted on GitHub Pages with a slideshow.</p>
+            </section>
+            <!-- Add more sections like About, Services, etc. -->
+        </main>
 
-        <div class="mySlides fade">
-            <img src="images/slide2.jpg" style="width:100%">
-        </div>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </footer>
 
-        <div class="mySlides fade">
-            <img src="images/slide3.jpg" style="width:100%">
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <main>
-        <section id="home">
-            <h2>Welcome to My Website</h2>
-            <p>This is a simple website hosted on GitHub Pages with a slideshow.</p>
-        </section>
-        <!-- Add more sections like About, Services, etc. -->
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
+    </div> <!-- End of wrapper -->
 
     <!-- Slideshow Script -->
     <script>
@@ -74,3 +79,4 @@
 
 </body>
 </html>
+
