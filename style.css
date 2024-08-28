@@ -9,33 +9,41 @@
 body {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    overflow: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #07407b;
+    z-index: 1000;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background-color: #07407b;
+    z-index: 1000;
 }
 
 /* Page Content Wrapper */
 .wrapper {
     position: relative;
-    margin: 20px;
-    height: calc(100% - 40px);
-    max-width: calc(100% - 40px);
+    padding: 120px 20px 20px 120px;
+    min-height: 100vh;
+    width: 100%;
     overflow: auto;
-    border-top: 25px solid #07407b; /* Top border */
-    border-left: 25px solid #07407b; /* Left border */
-}
-
-/* Border around the first section */
-.wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: 5px solid #07407b;
-    pointer-events: none;
-    z-index: 1;
 }
 
 /* Header */
@@ -60,8 +68,8 @@ header .logo h1 {
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 75vh; /* Set the height of the slideshow to 75% of the viewport height */
-    overflow: hidden; /* Hide any overflow */
+    height: 75vh;
+    overflow: hidden;
     margin-top: 20px;
     z-index: 1;
 }
@@ -78,7 +86,7 @@ header .logo h1 {
 .mySlides img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This will cover the entire slide area while maintaining aspect ratio */
+    object-fit: cover;
 }
 
 /* Fading animation */
