@@ -48,7 +48,7 @@
         for (let i = 1; i <= totalSlides; i++) {
             const slide = document.createElement('div');
             slide.className = 'mySlides fade';
-            slide.innerHTML = `<img src="${baseUrl}Slide%20${i}.jpg" alt="Slide ${i}" style="width:100%">`;
+            slide.innerHTML = `<img src="${baseUrl}${i}.jpg" alt="Slide ${i}" style="width:100%">`;
             slideshowContainer.appendChild(slide);
         }
 
@@ -69,5 +69,4 @@
 
 </body>
 </html>
-
 
