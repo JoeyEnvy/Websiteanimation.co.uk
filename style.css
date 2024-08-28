@@ -218,6 +218,18 @@ nav ul li a:hover {
     object-fit: cover;
 }
 
+.mySlides::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0f3b;
+    opacity: 0.65;
+    z-index: 2;
+}
+
 .mySlides.fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -226,6 +238,35 @@ nav ul li a:hover {
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+/* New styles for the overlay block and button */
+.overlay-block {
+    position: absolute;
+    bottom: 25%; /* Positions the block 75% down the slideshow */
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.75); /* Black with 75% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3; /* Ensures it's above the slides and their overlay */
+}
+
+.more-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.more-button:hover {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .slide-show-icons {
