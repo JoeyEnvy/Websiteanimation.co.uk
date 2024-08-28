@@ -1,27 +1,11 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Page Styling */
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    overflow-x: hidden;
-    font-family: 'Exo', sans-serif;
-    position: relative;
-}
-
+/* Modify the body::before and body::after */
 body::before {
     content: '';
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 100px; /* Changed from 50px to 100px */
     background-color: #07407b;
     z-index: 1000;
 }
@@ -37,18 +21,18 @@ body::after {
     z-index: 1000;
 }
 
-/* Page Content Wrapper */
+/* Adjust the wrapper */
 .wrapper {
     position: relative;
     padding: 20px;
     min-height: 100vh;
-    width: calc(100% - 50px);
+    width: calc(100% - 50px); /* Adjust for the left border */
     overflow: auto;
-    margin-top: 100px;
-    margin-left: 50px;
+    margin-top: 100px; /* Adjust for the fixed top border */
+    margin-left: 50px; /* Adjust for the fixed left border */
 }
 
-/* Header */
+/* Adjust the header */
 header {
     display: flex;
     justify-content: space-between;
@@ -56,191 +40,18 @@ header {
     background-color: #07407b;
     padding: 10px 20px;
     position: fixed;
-    top: 100px;
-    left: 50px;
+    top: 100px; /* Adjust to sit below the top border */
+    left: 50px; /* Adjust to sit next to the left border */
     right: 0;
-    z-index: 999;
+    z-index: 999; /* Ensure it's below the top border */
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    font-size: 24px;
-    color: white;
-    margin: 0;
-}
-
-/* Navigation Bar */
-nav {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Navbar Container */
-.navbar-container {
-    width: 100%;
-    height: 20vh;
-    background-color: #0e0f3b;
-    position: relative;
-    z-index: 2;
-    margin-top: 70px;
-}
-
-/* Slideshow */
+/* Adjust the slideshow container */
 .slideshow-container {
     position: relative;
     width: 100%;
     height: 75vh;
     overflow: hidden;
-    margin-top: 0;
+    margin-top: 70px; /* Adjust based on your header height */
     z-index: 1;
-}
-
-.mySlides {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.mySlides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
-}
-
-main h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-main p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
-/* Contact Section */
-#contact {
-    margin-top: 20px;
-}
-
-.contact-box {
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.contact-box h2 {
-    margin-bottom: 15px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    background-color: #07407b;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #052a4f;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    width: 100%;
-    font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
 }
