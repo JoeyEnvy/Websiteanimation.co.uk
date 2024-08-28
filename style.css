@@ -21,6 +21,8 @@ body {
     height: calc(100% - 40px);
     max-width: calc(100% - 40px);
     overflow: auto;
+    border-top: 25px solid #07407b; /* Top border */
+    border-left: 25px solid #07407b; /* Left border */
 }
 
 /* Border around the first section */
