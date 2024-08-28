@@ -94,8 +94,8 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-family: 'Exo', sans-serif;
-    font-size: 24px; /* Increased by 8 from a typical base size of 16px */
+    font-family: 'Exo', sans-serif; /* Use the Exo font */
+    font-size: 18px; /* Increased font size to 18px */
     transition: all 0.3s ease;
 }
 
