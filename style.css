@@ -5,13 +5,14 @@
     box-sizing: border-box;
 }
 
-/* Page Border */
-body {
-    margin: 0;
-    padding: 0;
-    border: 10vh solid #07407b;  /* Full border around the page */
-    height: calc(100vh - 20vh);  /* Adjust height to account for the border */
-    overflow: auto; /* Ensure scrolling works properly */
+/* Page Wrapper */
+.wrapper {
+    border: 10vh solid #07407b; /* Full border around the page */
+    height: calc(100vh - 20vh); /* Adjust height to account for the border */
+    width: calc(100% - 20vh);   /* Adjust width to account for the border */
+    margin: 0 auto;             /* Center the wrapper */
+    overflow: auto;             /* Ensure scrolling works properly */
+    position: relative;
 }
 
 /* Header */
@@ -57,8 +58,8 @@ nav ul li a:hover {
 /* Slideshow */
 .slideshow-container {
     position: relative;
-    max-width: calc(100% - 20vh); /* Adjust width to account for the border */
-    margin: 70px auto 0 auto; /* Adjust margin for header height and centering */
+    max-width: 100%;
+    margin-top: 60px; /* Adjust margin for header height */
 }
 
 .mySlides {
@@ -75,8 +76,8 @@ nav ul li a:hover {
 main {
     padding: 20px;
     margin-top: 20px;
-    max-width: calc(100% - 20vh); /* Adjust width to account for the border */
-    margin: 20px auto; /* Center the content */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 main h2 {
@@ -96,6 +97,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-top: 20px;
     position: fixed;
     width: calc(100% - 20vh); /* Adjust width to account for the border */
     bottom: 10vh; /* Position it above the bottom border */
