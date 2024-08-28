@@ -17,39 +17,11 @@
             <div class="logo">
                 <h1>My Website</h1>
             </div>
-            <!-- Navigation Bar -->
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#templates">Templates</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </header>
 
         <!-- Slideshow -->
         <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="https://raw.githubusercontent.com/JoeyEnvy/Websiteanimation.co.uk/main/images/Slide%20Show/Slide%20Show%20Use/Slide%201.jpg" alt="Slide 1" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="https://raw.githubusercontent.com/JoeyEnvy/Websiteanimation.co.uk/main/images/Slide%20Show/Slide%20Show%20Use/Slide%202.jpg" alt="Slide 2" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="https://raw.githubusercontent.com/JoeyEnvy/Websiteanimation.co.uk/main/images/Slide%20Show/Slide%20Show%20Use/Slide%203.jpg" alt="Slide 3" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="https://raw.githubusercontent.com/JoeyEnvy/Websiteanimation.co.uk/main/images/Slide%20Show/Slide%20Show%20Use/Slide%204.jpg" alt="Slide 4" style="width:100%">
-            </div>
-
-            <div class="mySlides fade">
-                <img src="https://raw.githubusercontent.com/JoeyEnvy/Websiteanimation.co.uk/main/images/Slide%20Show/Slide%20Show%20Use/Slide%205.jpg" alt="Slide 5" style="width:100%">
-            </div>
+            <!-- Slides will be inserted here by JavaScript -->
         </div>
 
         <!-- Main Content -->
@@ -58,7 +30,6 @@
                 <h2>Welcome to My Website</h2>
                 <p>This is a simple website hosted on GitHub Pages with a slideshow.</p>
             </section>
-            <!-- Add more sections like About, Services, etc. -->
         </main>
 
         <!-- Footer -->
@@ -70,13 +41,23 @@
 
     <!-- Slideshow Script -->
     <script>
+        const slideshowContainer = document.querySelector('.slideshow-container');
+        const baseUrl = "https://raw.githubusercontent.com/JoeyEnvy/Websiteanimation.co.uk/main/images/Slide%20Show/Slide%20Show%20Use/";
+        const totalSlides = 12;
+
+        for (let i = 1; i <= totalSlides; i++) {
+            const slide = document.createElement('div');
+            slide.className = 'mySlides fade';
+            slide.innerHTML = `<img src="${baseUrl}${i}.jpg" alt="Slide ${i}">`;
+            slideshowContainer.appendChild(slide);
+        }
+
         let slideIndex = 0;
         showSlides();
 
         function showSlides() {
-            let i;
             let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
+            for (let i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             slideIndex++;
@@ -88,5 +69,4 @@
 
 </body>
 </html>
-
 
