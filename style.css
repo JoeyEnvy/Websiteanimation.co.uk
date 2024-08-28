@@ -11,7 +11,7 @@ body {
     padding: 0;
     min-height: 100vh;
     overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Exo', sans-serif; /* Set Exo as the default font for the entire body */
     position: relative;
 }
 
@@ -69,7 +69,6 @@ header {
 
 .logo h1 {
     font-size: 24px;
-    font-family: 'Playfair Display', serif;
     color: white;
     margin: 0;
 }
@@ -94,8 +93,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-family: 'Exo', sans-serif; /* Use the Exo font */
-    font-size: 18px; /* Increased font size to 18px */
+    font-size: 18px;
     transition: all 0.3s ease;
 }
 
@@ -149,7 +147,6 @@ main {
 main h2 {
     font-size: 28px;
     color: #333;
-    font-family: 'Playfair Display', serif;
     margin-bottom: 15px;
 }
 
