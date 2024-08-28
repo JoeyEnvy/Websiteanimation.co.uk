@@ -21,7 +21,7 @@ body::before {
     top: 0;
     left: 0;
     right: 0;
-    height: 100px;
+    height: 50px;
     background-color: #07407b;
     z-index: 1000;
 }
@@ -32,7 +32,7 @@ body::after {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 100px;
+    width: 50px;
     background-color: #07407b;
     z-index: 1000;
 }
@@ -40,12 +40,12 @@ body::after {
 /* Page Content Wrapper */
 .wrapper {
     position: relative;
-    padding: 20px; /* Add padding for content */
+    padding: 20px;
     min-height: 100vh;
     width: 100%;
     overflow: auto;
-    margin-top: 100px; /* Adjust for the fixed top border */
-    margin-left: 100px; /* Adjust for the fixed left border */
+    margin-top: 50px; /* Adjust for the fixed top border */
+    margin-left: 50px; /* Adjust for the fixed left border */
 }
 
 /* Header */
@@ -53,15 +53,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
-    position: relative;
-    width: calc(100% - 100px); /* Adjust for the left border */
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 50px;
+    right: 0;
+    height: 50px;
+    padding: 0 20px;
+    background-color: rgba(7, 64, 123, 0.9); /* Semi-transparent background */
 }
 
 header .logo h1 {
     font-size: 24px;
     font-family: 'Playfair Display', serif;
-    color: white; /* Change logo color for visibility */
+    color: white;
 }
 
 /* Navigation Bar */
@@ -75,22 +80,26 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Change link color for visibility */
+    color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: 300;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Slideshow */
 .slideshow-container {
     position: relative;
     width: 100%;
-    height: 75vh; /* Set the height of the slideshow to 75% of the viewport height */
-    overflow: hidden; /* Hide any overflow */
+    height: 75vh;
+    overflow: hidden;
     margin-top: 20px;
     z-index: 1;
 }
@@ -107,7 +116,7 @@ nav ul li a:hover {
 .mySlides img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This will cover the entire slide area while maintaining aspect ratio */
+    object-fit: cover;
 }
 
 /* Fading animation */
@@ -150,4 +159,22 @@ footer {
     margin-top: 20px;
     width: 100%;
     font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
 }
