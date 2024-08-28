@@ -5,14 +5,21 @@
     box-sizing: border-box;
 }
 
-/* Page Wrapper */
+/* Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    border: 5px solid #07407b; /* Border around the page */
+    height: 100vh;
+    overflow: auto; /* Ensure scrolling works properly */
+}
+
+/* Page Content Wrapper */
 .wrapper {
-    border: 10vh solid #07407b; /* Full border around the page */
-    height: calc(100vh - 20vh); /* Adjust height to account for the border */
-    width: calc(100% - 20vh);   /* Adjust width to account for the border */
-    margin: 0 auto;             /* Center the wrapper */
-    overflow: auto;             /* Ensure scrolling works properly */
-    position: relative;
+    margin: 20px; /* Space between the border and the content */
+    height: calc(100% - 40px); /* Adjust height to account for the margin */
+    max-width: calc(100% - 40px); /* Adjust width to account for the margin */
+    overflow: auto;
 }
 
 /* Header */
@@ -21,9 +28,7 @@ header {
     color: white;
     padding: 10px 0;
     text-align: center;
-    position: fixed;
-    width: calc(100% - 20vh); /* Adjust width to account for the border */
-    top: 10vh;  /* Start below the top border */
+    width: 100%;
     z-index: 1000;
 }
 
@@ -75,9 +80,6 @@ nav ul li a:hover {
 /* Main Content */
 main {
     padding: 20px;
-    margin-top: 20px;
-    max-width: 100%;
-    margin: 0 auto;
 }
 
 main h2 {
@@ -98,9 +100,8 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-    position: fixed;
-    width: calc(100% - 20vh); /* Adjust width to account for the border */
-    bottom: 10vh; /* Position it above the bottom border */
+    width: 100%;
 }
+
 
 
