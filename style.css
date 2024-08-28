@@ -80,17 +80,21 @@ nav ul li a:hover {
     position: relative;
     max-width: 100%;
     margin-top: 20px;
+    height: 75vh; /* Set the height of the slideshow to 75% of the viewport height */
+    overflow: hidden; /* Hide any overflow */
     z-index: 1;
 }
 
 .mySlides {
     display: none;
+    height: 100%; /* Make sure slides take full height of the container */
 }
 
 .mySlides img {
     vertical-align: middle;
     width: 100%;
-    height: auto;
+    height: 100%; /* Ensure images fill the height of the slideshow */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
 }
 
 /* Fading animation */
