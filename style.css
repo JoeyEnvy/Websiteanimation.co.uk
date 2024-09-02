@@ -297,8 +297,8 @@ nav ul li a:hover {
 }
 
 .freelancer-logo {
-    max-width: 300px;
-    margin-bottom: 20px;
+    max-width: 2000px;
+    margin-bottom: 0px;
 }
 
 .info-item {
@@ -308,7 +308,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 20px 0;
     background: none; /* Ensure no background */
-    opacity: 1; /* Ensure full opacity of text */
+    opacity: 0; /* Ensure full opacity of text */
 }
 
 .decorative-line {
@@ -328,7 +328,7 @@ nav ul li a:hover {
 .freelancer-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 200px;
     margin-top: 40px;
 }
 
@@ -345,7 +345,7 @@ nav ul li a:hover {
 }
 
 .freelancer-item img {
-    max-width: 100px;
+    max-width: 200px;
     height: auto;
     margin-top: 10px; /* Adjust margin to ensure spacing */
 }
@@ -357,7 +357,7 @@ nav ul li a:hover {
 
 /* Remove any hover effects */
 .info-item:hover {
-    background: none;
+    background: #0e0f3b;
     opacity: 1;
 }
 
@@ -866,3 +866,158 @@ li::before {
         grid-template-columns: 1fr;
     }
 }
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Exo:wght@400;700&display=swap');
+
+.additional-info {
+    font-family: 'Exo', sans-serif;
+    background-color: #0e0f3b; /* Dark Blue */
+    color: #ffffff; /* White */
+    padding: 20px;
+}
+
+.additional-info h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 24px;
+    color: #f7931e; /* Orange */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    background-color: #07407b; /* Blue */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+}
+
+.info-item h3 {
+    font-family: 'Bungee', cursive;
+    font-size: 20px;
+    color: #7fcdee; /* Light Blue */
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    color: #ffffff; /* White */
+    line-height: 1.5;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&family=Bungee&display=swap');
+
+.testimonials {
+  background-color: #0e0f3b;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  font-family: 'Exo', sans-serif;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-family: 'Bungee', cursive;
+  font-size: 2.7rem; /* Adjusted size */
+  margin-bottom: 2rem;
+  color: #7fcdee;
+  text-shadow: 2px 2px #07407b;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 300px));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background-color: #07407b;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #f7931e;
+}
+
+.testimonial-card h3 {
+  font-size: 1.4rem; /* Adjusted size */
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.testimonial-card .title {
+  color: #7fcdee;
+  font-size: 1.1rem; /* Adjusted size */
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .quote {
+  font-style: italic;
+  line-height: 1.6;
+  font-size: 1.1rem; /* Adjusted size */
+}
+
+/* Center the bottom two columns */
+.testimonial-card:nth-child(4),
+.testimonial-card:nth-child(5) {
+  grid-column: span 1;
+}
+
+.testimonial-card:nth-child(4) {
+  justify-self: end;
+  margin-right: 1rem;
+}
+
+.testimonial-card:nth-child(5) {
+  justify-self: start;
+  margin-left: 1rem;
+}
+
+@media (max-width: 992px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 300px));
+  }
+  
+  .testimonial-card:nth-child(4),
+  .testimonial-card:nth-child(5) {
+    justify-self: center;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: minmax(0, 300px);
+  }
+  
+  .testimonials h2 {
+    font-size: 2.3rem; /* Slightly smaller on mobile for better fit */
+  }
+}
+
