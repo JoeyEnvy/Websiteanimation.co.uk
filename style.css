@@ -128,7 +128,7 @@ header.fixed-top .logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: linear-gradient(to bottom, rgba(7, 64, 123, 1), rgba(7, 64, 123, 0)); /* Full opacity at top, transparent at bottom */
+    background: white
     padding: 10px 20px;
     height: 85px;
     margin-top: 75px;
