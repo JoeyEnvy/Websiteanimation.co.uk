@@ -3,28 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graphic Design</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Graphic Design & Printing Services - Creative Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;700&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="graphicdesign.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>My Creative Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="webdesign.html">Web Design</a></li>
-                <li><a href="animation.html">Animation</a></li>
-                <li><a href="graphicdesign.html">Graphic Design</a></li>
-                <li><a href="videoimagediting.html">Video/Image Editing</a></li>
-            </ul>
-        </nav>
+    <header id="header">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo-placeholder.png" alt="Creative Solutions Logo" width="auto" height="50">
+                </a>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                    <li><a href="#logo-design">Logo Design</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </header>
-    <main>
-        <h2>Graphic Design</h2>
-        <p>Here is my work in graphic design.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Creative Portfolio</p>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Graphic Design & Printing Solutions</h1>
+            <p>Bringing your ideas to life with stunning visuals and high-quality prints.</p>
+            <a href="#contact" class="cta-button">Get a Quote</a>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="section-container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/service-placeholder-1.jpg" alt="Logo Design">
+                    <h3>Logo Design</h3>
+                    <p>Create a unique identity for your brand with our custom logo design services. We blend creativity with strategy to craft memorable logos that resonate with your target audience.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-placeholder-2.jpg" alt="Branding">
+                    <h3>Branding</h3>
+                    <p>Develop a cohesive brand identity with our comprehensive branding solutions. From color palettes to typography, we ensure your brand communicates consistently across all platforms.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-placeholder-3.jpg" alt="Print Design">
+                    <h3>Print Design</h3>
+                    <p>From business cards to brochures, we design eye-catching print materials that leave a lasting impression. Our print designs are optimized for both visual appeal and print quality.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-placeholder-4.jpg" alt="Vehicle Wraps">
+                    <h3>Vehicle Wraps</h3>
+                    <p>Transform your vehicles into mobile billboards with our custom wrap designs. We create attention-grabbing vehicle wraps that effectively promote your business on the go.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-placeholder-5.jpg" alt="Signage">
+                    <h3>Signage</h3>
+                    <p>Create impactful indoor and outdoor signs for your business or event. Our signage solutions combine durability with striking design to ensure your message stands out.</p>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-placeholder-6.jpg" alt="Stickers & Decals">
+                    <h3>Stickers & Decals</h3>
+                    <p>Custom stickers and decals for promotional or decorative purposes. We offer a wide range of materials and finishes to suit any application, from product labels to wall decals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <div class="section-container">
+            <h2>Our Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/portfolio-placeholder-1.jpg" alt="Portfolio Item 1">
+                    <div class="portfolio-overlay">
+                        <h3>Brand Identity Package</h3>
+                        <p>Complete branding solution for a tech startup, including logo, business cards, and website design.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-placeholder-2.jpg" alt="Portfolio Item 2">
+                    <div class="portfolio-overlay">
+                        <h3>Vehicle Wrap Design</h3>
+                        <p>Eye-catching wrap for a local food truck, increasing brand visibility and customer engagement.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-placeholder-3.jpg" alt="Portfolio Item 3">
+                    <div class="portfolio-overlay">
+                        <h3>Event Signage</h3>
+                        <p>Comprehensive signage package for a music festival, enhancing attendee experience and wayfinding.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio-placeholder-4.jpg" alt="Portfolio Item 4">
+                    <div class="portfolio-overlay">
+                        <h3>Product Packaging</h3>
+                        <p>Innovative packaging design for a cosmetics line, boosting shelf appeal and brand recognition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process-section">
+        <div class="section-container">
+            <h2>Our Design & Printing Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>1. Consultation</h3>
+                    <p>We discuss your needs, goals, and vision for the project, ensuring we understand your brand and target audience.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-pencil-alt"></i>
+                    <h3>2. Concept Development</h3>
+                    <p>Our designers create initial concepts based on your brief, exploring various creative directions.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>3. Revisions</h3>
+                    <p>We refine the chosen concept based on your feedback, ensuring the final design meets your expectations.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>4. Approval</h3>
+                    <p>You approve the final design before production, ensuring you're completely satisfied with the result.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-print"></i>
+                    <h3>5. Printing</h3>
+                    <p>We use high-quality materials and advanced printing techniques to bring your design to life.</p>
+                </div>
+                <div class="step">
+                    <i class="fas fa-truck"></i>
+                    <h3>6. Delivery</h3>
+                    <p>Your finished products are carefully packaged and delivered to your specified location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="logo-design" class="logo-design-section">
+        <div class="section-container">
+            <h2>Logo & Graphic Design for Businesses</h2>
+            <div class="logo-design-content">
+                <div class="logo-design-text">
+                    <h3>Small Business Solutions</h3>
+                    <p>We understand the unique needs of small businesses. Our affordable logo and graphic design packages help startups and small enterprises establish a professional brand identity without breaking the bank.</p>
+                    <h3>Corporate Branding</h3>
+                    <p>For larger businesses, we offer comprehensive branding solutions that ensure consistency across all touchpoints. From logo design to brand guidelines, we help corporations maintain a cohesive and impactful brand presence.</p>
+                </div>
+                <div class="logo-design-image">
+                    <img src="images/logo-design-placeholder.jpg" alt="Logo Design Examples">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="portfolio" class="portfolio-section">
+    <div class="section-container">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="logos">Logos</button>
+            <button class="category-btn" data-category="signage">Signage</button>
+            <button class="category-btn" data-category="vinyl">Vinyl & Decals</button>
+            <button class="category-btn" data-category="print">Print</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-category="logos">
+                <img src="images/logo-placeholder-1.jpg" alt="Modern Tech Logo">
+                <div class="portfolio-overlay">
+                    <h3>Modern Tech Logo</h3>
+                    <p>Sleek and innovative logo design for a tech startup, incorporating dynamic elements and a futuristic color scheme.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="signage">
+                <img src="images/signage-placeholder-1.jpg" alt="Retail Store Signage">
+                <div class="portfolio-overlay">
+                    <h3>Retail Store Signage</h3>
+                    <p>Eye-catching exterior signage for a boutique clothing store, featuring illuminated channel letters and a stylish facade design.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="vinyl">
+                <img src="images/vinyl-placeholder-1.jpg" alt="Vehicle Wrap Design">
+                <div class="portfolio-overlay">
+                    <h3>Vehicle Wrap Design</h3>
+                    <p>Bold and vibrant full vehicle wrap for a local food delivery service, maximizing brand visibility on the go.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="print">
+                <img src="images/print-placeholder-1.jpg" alt="Corporate Brochure">
+                <div class="portfolio-overlay">
+                    <h3>Corporate Brochure</h3>
+                    <p>Elegant and informative tri-fold brochure design for a financial services company, featuring custom infographics and premium print finishes.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="logos">
+                <img src="images/logo-placeholder-2.jpg" alt="Organic Food Brand Logo">
+                <div class="portfolio-overlay">
+                    <h3>Organic Food Brand Logo</h3>
+                    <p>Nature-inspired logo design for an organic food brand, combining hand-drawn elements with modern typography.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="signage">
+                <img src="images/signage-placeholder-2.jpg" alt="Office Interior Signage">
+                <div class="portfolio-overlay">
+                    <h3>Office Interior Signage</h3>
+                    <p>Modern and functional wayfinding system for a corporate office space, incorporating the company's brand colors and style.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="vinyl">
+                <img src="images/vinyl-placeholder-2.jpg" alt="Window Graphics">
+                <div class="portfolio-overlay">
+                    <h3>Window Graphics</h3>
+                    <p>Attractive window decals for a coffee shop, featuring custom illustrations and promotional messaging to engage passersby.</p>
+                </div>
+            </div>
+            <div class="portfolio-item" data-category="print">
+                <img src="images/print-placeholder-2.jpg" alt="Event Poster Series">
+                <div class="portfolio-overlay">
+                    <h3>Event Poster Series</h3>
+                    <p>Visually striking poster series for a music festival, showcasing vibrant colors and dynamic typography to capture the event's energy.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <select name="service" required>
+                    <option value="">Select a Service</option>
+                    <option value="logo-design">Logo Design</option>
+                    <option value="branding">Branding</option>
+                    <option value="print-design">Print Design</option>
+                    <option value="vehicle-wraps">Vehicle Wraps</option>
+                    <option value="signage">Signage</option>
+                    <option value="stickers-decals">Stickers & Decals</option>
+                </select>
+                <textarea name="message" placeholder="Tell us about your project" required></textarea>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Creative Solutions</h3>
+                <p>Your partner in graphic design and printing excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                    <li><a href="#logo-design">Logo Design</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@creativesolutions.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Design Street, Creativeville, CV 12345</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Creative Solutions. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
+

@@ -3,344 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
- <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>WebsiteAnimation.co.uk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Exo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.25/build/spline-viewer.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <header id="header">
-            <div class="navbar-container">
-                <div class="logo">
-                    <h1>My Website</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#about" class="dropbtn">About</a>
-                            <div class="dropdown-content">
-                                <a href="how-we-work.html">How We Work</a>
-                                <a href="information.html">Information</a>
-                                <a href="the-process.html">The Process</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#services" class="dropbtn">Services</a>
-                            <div class="dropdown-content">
-                                <a href="services/webdesign.html">Web Design</a>
-                                <a href="services/animation.html">Animation</a>
-                                <a href="services/graphicdesign.html">Graphic Design</a>
-                                <a href="services/videoimageediting.html">Video/Image Editing</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#portfolio" class="dropbtn">Portfolio</a>
-                            <div class="dropdown-content">
-                                <a href="clients.html">Clients</a>
-                                <a href="templates.html">Templates</a>
-                            </div>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#contact" class="dropbtn">Contact Us</a>
-                            <div class="dropdown-content">
-                                <a href="faq.html">FAQ</a>
-                                <a href="testimonials.html">Testimonials</a>
-                                <a href="contact.html">Contact</a>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+    <div class="container">
+        <div class="column left-column">
+            <div class="new-bar">
+                <div class="logo"></div>
             </div>
-        </header>
-
-    <!-- Contact Box -->
-    <div class="contact-box">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
-            
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" placeholder="Your Message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
+            <div class="bottom-bar">
+                <div class="icon-placeholder"></div>
+            </div>
+        </div>
+        <div class="column middle-column">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">Services</a>
+                        <ul>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Animation</a></li>
+                            <li><a href="#">Video/Image Production/Editing</a></li>
+                            <li><a href="#">Graphic Design/Printing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                        <ul>
+                            <li><a href="#">How We Work</a></li>
+                            <li><a href="#">Information</a></li>
+                            <li><a href="#">The Process</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                        <ul>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Templates</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#Contact">Contact Us</a>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="spline-container">
+                <spline-viewer hint loading-anim-type="spinner-small-light" url="https://prod.spline.design/hmDd9iNTmdRqvTKU/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="social-media">
+                <h3>Connect with us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook"></a>
+                    <a href="#" class="social-icon instagram"></a>
+                    <a href="#" class="social-icon whatsapp"></a>
+                    <a href="#" class="social-icon paypal"></a>
+                </div>
+            </div>
+        </div>
+        <div class="column right-column">
+            <div class="new-bar">
+                <a href="#Contact" class="get-quote-button">Get a Quote</a>
+            </div>
+            <div class="bottom-bar">
+                <div class="icon-placeholder"></div>
+            </div>
+        </div>
+        <div class="slider">Creative Graphic Design • Engaging Animation • Innovative Web Design • Global Freelance Expertise • Logo & Branding Solutions • Responsive Web Development • Motion Graphics for Marketing • Client-Centered Solutions • Fast Turnaround, High Quality • Contact Us Today</div>
     </div>
 
-        <!-- Slideshow Container -->
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/1.jpg" alt="Slide 1">
+    
+    <div class="freelancer">
+        <div class="info-item">Joshua Josef Mort</div>
+        <div class="decorative-line"></div>
+        <div class="info-item">Freelancer</div>
+        <div class="decorative-line"></div>
+        <p class="freelancer-description">Joshua Josef Mort and his team at WebsiteAnimation.co.uk are dedicated to crafting visually stunning websites and animations. Based in South Wales, we cater to both local businesses and clients worldwide, combining a personal touch with professional excellence.</p>
+        <div class="freelancer-grid">
+            <div class="freelancer-item">
+                <img src="images/Icons/Freelancer Icons/1.png" alt="After Effects Icon">
+                <h3>After Effects</h3>
+                <p>Adobe After Effects elevates your projects with professional-grade motion graphics, visual effects, and animations. It is used to create interactive 2D animations for websites and stunning video editing animations, adding dynamic flair and captivating visuals to your content.</p>
             </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/2.jpg" alt="Slide 2">
+            <div class="freelancer-item">
+                <img src="images/Icons/Freelancer Icons/2.png" alt="Blender Icon">
+                <h3>Blender</h3>
+                <p>Blender enables us to create stunning 3D character customizations, detailed models, and smooth animations, bringing your vision to life with engaging, high-quality 3D elements for your website or video content.</p>
             </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/3.jpg" alt="Slide 3">
+            <div class="freelancer-item">
+                <img src="images/Icons/Freelancer Icons/3.png" alt="Webflow Icon">
+                <h3>Webflow</h3>
+                <p>Webflow offers a powerful platform for building responsive, visually stunning websites without the need for coding. It provides customizable design tools and seamless CMS integration, allowing you to create interactive web experiences that are both beautiful and functional.</p>
             </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/4.jpg" alt="Slide 4">
+            <div class="freelancer-item">
+                <img src="images/Icons/Freelancer Icons/4.png" alt="CSS/Java Icon">
+                <h3>CSS/Java</h3>
+                <p>CSS shapes the visual design and layout of your site for a cohesive look across all devices, while JavaScript enhances user interaction and functionality, making your website dynamic and responsive to user actions.</p>
             </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/5.jpg" alt="Slide 5">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/6.jpg" alt="Slide 6">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/7.jpg" alt="Slide 7">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/8.jpg" alt="Slide 8">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/9.jpg" alt="Slide 9">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/10.jpg" alt="Slide 10">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/11.jpg" alt="Slide 11">
-            </div>
-            <div class="mySlides fade">
-                <img src="images/Slide Show/Slide Show Use/12.jpg" alt="Slide 12">
-            </div>
-<div class="overlay-block">
-    <button class="more-button">More</button>
-</div>
-        </div>
 
-<div class="overlapping-section">
-        <div class="mobile-menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="dropdown-menu" id="dropdownMenu">
-            <a href="#home">Home</a>
-            <div class="dropdown">
-                <a href="#about">About</a>
-                <div class="dropdown-content">
-                    <a href="how-we-work.html">How We Work</a>
-                    <a href="information.html">Information</a>
-                    <a href="the-process.html">The Process</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#services">Services</a>
-                <div class="dropdown-content">
-                    <a href="services/webdesign.html">Web Design</a>
-                    <a href="services/animation.html">Animation</a>
-                    <a href="services/graphicdesign.html">Graphic Design</a>
-                    <a href="services/videoimageediting.html">Video/Image Editing</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#portfolio">Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="clients.html">Clients</a>
-                    <a href="templates.html">Templates</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#contact">Contact Us</a>
-                <div class="dropdown-content">
-                    <a href="faq.html">FAQ</a>
-                    <a href="testimonials.html">Testimonials</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
-        <h1>WebsiteAnimation.co.uk</h1>
-        <p>Welcome to our business website where creativity meets technology. Explore our services and portfolio to learn more about what we offer.</p>
-        <div class="connect-section">
-            <h2>Connect with Us</h2>
-            <div class="social-icons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('dropdownMenu');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
-        }
-    </script><div class="overlapping-section">
-        <div class="mobile-menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="dropdown-menu" id="dropdownMenu">
-            <a href="#home">Home</a>
-            <div class="dropdown">
-                <a href="#about">About</a>
-                <div class="dropdown-content">
-                    <a href="how-we-work.html">How We Work</a>
-                    <a href="information.html">Information</a>
-                    <a href="the-process.html">The Process</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#services">Services</a>
-                <div class="dropdown-content">
-                    <a href="services/webdesign.html">Web Design</a>
-                    <a href="services/animation.html">Animation</a>
-                    <a href="services/graphicdesign.html">Graphic Design</a>
-                    <a href="services/videoimageediting.html">Video/Image Editing</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#portfolio">Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="clients.html">Clients</a>
-                    <a href="templates.html">Templates</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#contact">Contact Us</a>
-                <div class="dropdown-content">
-                    <a href="faq.html">FAQ</a>
-                    <a href="testimonials.html">Testimonials</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
-        <h1>WebsiteAnimation.co.uk</h1>
-        <p>Welcome to our business website where creativity meets technology. Explore our services and portfolio to learn more about what we offer.</p>
-        <div class="connect-section">
-            <h2>Connect with Us</h2>
-            <div class="social-icons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('dropdownMenu');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
-        }
-    </script><div class="overlapping-section">
-        <div class="mobile-menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div class="dropdown-menu" id="dropdownMenu">
-            <a href="#home">Home</a>
-            <div class="dropdown">
-                <a href="#about">About</a>
-                <div class="dropdown-content">
-                    <a href="how-we-work.html">How We Work</a>
-                    <a href="information.html">Information</a>
-                    <a href="the-process.html">The Process</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#services">Services</a>
-                <div class="dropdown-content">
-                    <a href="services/webdesign.html">Web Design</a>
-                    <a href="services/animation.html">Animation</a>
-                    <a href="services/graphicdesign.html">Graphic Design</a>
-                    <a href="services/videoimageediting.html">Video/Image Editing</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#portfolio">Portfolio</a>
-                <div class="dropdown-content">
-                    <a href="clients.html">Clients</a>
-                    <a href="templates.html">Templates</a>
-                </div>
-            </div>
-            <div class="dropdown">
-                <a href="#contact">Contact Us</a>
-                <div class="dropdown-content">
-                    <a href="faq.html">FAQ</a>
-                    <a href="testimonials.html">Testimonials</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-            </div>
-        </div>
-        <h1>WebsiteAnimation.co.uk</h1>
-        <p>Welcome to our business website where creativity meets technology. Explore our services and portfolio to learn more about what we offer.</p>
-        <div class="connect-section">
-            <h2>Connect with Us</h2>
-            <div class="social-icons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById('dropdownMenu');
-            if (menu.style.display === 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
-        }
-    </script>
-
-        <!-- Slide Show Icons -->
-        <div class="slide-show-icons">
-            <img src="path/to/icon1.png" alt="Icon 1" class="icon-item">
-            <img src="path/to/icon2.png" alt="Icon 2" class="icon-item">
-            <img src="path/to/icon3.png" alt="Icon 3" class="icon-item">
-        </div>
-
-               <div class="freelancer">
-            <img src="images/Website Animation New Logo.png" alt="WebsiteAnimation Logo" class="freelancer-logo">
-            <div class="info-item">Joshua Josef Mort</div>
-            <div class="decorative-line"></div>
-            <div class="info-item">Freelancer</div>
-            <div class="decorative-line"></div>
-            <p class="freelancer-description">Joshua Josef Mort and his team at WebsiteAnimation.co.uk are dedicated to crafting visually stunning websites and animations. Based in South Wales, we cater to both local businesses and clients worldwide, combining a personal touch with professional excellence.</p>
-            <div class="freelancer-grid">
-                <div class="freelancer-item">
-                    <img src="images/Icons/Freelancer Icons/1.png" alt="Icon 1">
-                    <h3>Title 1</h3>
-                    <p>Placeholder text for item 1</p>
-                </div>
-                <div class="freelancer-item">
-                    <img src="images/Icons/Freelancer Icons/2.png" alt="Icon 2">
-                    <h3>Title 2</h3>
-                    <p>Placeholder text for item 2</p>
-                </div>
-                <div class="freelancer-item">
-                    <img src="images/Icons/Freelancer Icons/3.png" alt="Icon 3">
-                    <h3>Title 3</h3>
-                    <p>Placeholder text for item 3</p>
-                </div>
-                <div class="freelancer-item">
-                    <img src="images/Icons/Freelancer Icons/4.png" alt="Icon 4">
-                    <h3>Title 4</h3>
-                    <p>Placeholder text for item 4</p>
-                </div>
-                <div class="freelancer-item">
+<div class="freelancer-item">
                     <img src="images/Icons/Freelancer Icons/5.png" alt="Icon 5">
                     <h3>Title 5</h3>
                     <p>Placeholder text for item 5</p>
@@ -360,571 +129,15 @@
                     <h3>Title 8</h3>
                     <p>Placeholder text for item 8</p>
                 </div>
-            </div>
-        </div>
-        <!-- Clients Section -->
-        <section id="clients">
-            <h2>Our Clients</h2>
-            <div class="clients-grid">
-                <div class="client-item">
-                    <img src="path/to/client1.jpg" alt="Client 1">
-                    <h3>Client 1</h3>
-                    <p>Description for Client 1</p>
-                </div>
-                <div class="client-item">
-                    <img src="path/to/client2.jpg" alt="Client 2">
-                    <h3>Client 2</h3>
-                    <p>Description for Client 2</p>
-                </div>
-                <div class="client-item">
-                    <img src="path/to/client3.jpg" alt="Client 3">
-                    <h3>Client 3</h3>
-                    <p>Description for Client 3</p>
-                </div>
-                <div class="client-item">
-                    <img src="path/to/client4.jpg" alt="Client 4">
-                    <h3>Client 4</h3>
-                    <p>Description for Client 4</p>
-                </div>
-            </div>
-        </section>
 
- <section class="about">
-        <div class="container">
-            <h1>Welcome to WebsiteAnimation</h1>
-            
-            <div class="intro-grid">
-                <div class="intro-text">
-                    <p>Welcome to websiteanimation.co.uk. Owned by Joshua Mort, websiteanimation.co.uk is a small but dedicated web design agency based in Neath Port Talbot/Swansea, South Wales. We specialize in delivering high-quality web design and animation services tailored to meet the unique needs of each client. Our close-knit team is passionate about creating stunning, user-friendly websites that help businesses thrive online. We pride ourselves on our personalized approach, ensuring that every project we undertake is crafted with care and attention to detail. At websiteanimation.co.uk, we believe in making our clients feel valued and supported throughout the entire process, from concept to launch. This version maintains the original message while replacing the specified references.</p>
-                    <p>Our close-knit team is passionate about creating stunning, user-friendly websites that help businesses thrive online.</p>
-                </div>
-                <div class="intro-image">
-                    <img src="placeholder-team.jpg" alt="WebsiteAnimation Team" class="rounded-image">
-                </div>
-            </div>
-
-            <div class="highlight-box">
-                <p>At WebsiteAnimation, we believe in making our clients feel valued and supported throughout the entire process, from concept to launch.</p>
-            </div>
-
-
-
-            <h2>Why Choose WebsiteAnimation</h2>
-            
-            <div class="features-grid">
-                <div class="feature-item">
-                    <img src="placeholder-icon1.png" alt="Personal Touch Icon" class="feature-icon">
-                    <h3>Personal Touch</h3>
-                    <p>Joshua and his team are committed to providing a warm, friendly service, making sure you feel heard and appreciated.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="placeholder-icon2.png" alt="Quality Designs Icon" class="feature-icon">
-                    <h3>Quality Designs</h3>
-                    <p>We focus on creating visually appealing and highly functional websites.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="placeholder-icon3.png" alt="Expert Animations Icon" class="feature-icon">
-                    <h3>Expert Animations</h3>
-                    <p>Enhance your website with custom animations that captivate and engage your audience.</p>
-                </div>
-                <div class="feature-item">
-                    <img src="placeholder-icon4.png" alt="Local Expertise Icon" class="feature-icon">
-                    <h3>Local Expertise</h3>
-                    <p>Proudly serving businesses in Neath Port Talbot/Swansea and beyond.</p>
-                </div>
-            </div>
-
-            <div class="cta-box">
-                <p>Feel welcome to reach out to WebsiteAnimation for a personalized consultation and let us bring your web design vision to life!</p>
-                <a href="#" class="cta-button">Get in Touch</a>
-            </div>
-        </div>
-
-    <section class="how-we-work">
-    <h2 class="h1-how-we-work">How We Work</h2>
-    <div class="process-container">
-        <div class="process-step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-                <h3 class="h2-step-title">Consultation</h3>
-                <p class="p-step-description">We begin with an in-depth discussion to understand your project goals, target audience, and specific requirements. Our team of experts will analyze your needs and provide valuable insights to shape your vision.</p>
-                <div class="image-placeholder"></div>
-            </div>
-        </div>
-        <div class="process-step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-                <h3 class="h2-step-title">Planning</h3>
-                <p class="p-step-description">Based on our consultation, we develop a comprehensive project plan. This includes a detailed timeline, resource allocation, and milestones. We'll outline the technologies and methodologies to be used, ensuring a clear roadmap for success.</p>
-                <div class="image-placeholder"></div>
-            </div>
-        </div>
-        <div class="process-step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-                <h3 class="h2-step-title">Creation</h3>
-                <p class="p-step-description">Our skilled team of designers and developers work collaboratively to bring your vision to life. We employ cutting-edge technologies and best practices to create a product that not only meets but exceeds your expectations. Regular updates keep you informed throughout the process.</p>
-                <div class="image-placeholder"></div>
-            </div>
-        </div>
-        <div class="process-step">
-            <div class="step-number">4</div>
-            <div class="step-content">
-                <h3 class="h2-step-title">Refinement</h3>
-                <p class="p-step-description">We value your input and incorporate your feedback to fine-tune the project. Our iterative approach ensures that every detail is perfected. We conduct thorough testing and quality assurance to guarantee a polished final product.</p>
-                <div class="image-placeholder"></div>
-            </div>
-        </div>
-        <div class="process-step">
-            <div class="step-number">5</div>
-            <div class="step-content">
-                <h3 class="h2-step-title">Delivery</h3>
-                <p class="p-step-description">Once all refinements are complete, we deliver your project with full documentation and support. We ensure a smooth handover process and provide any necessary training. Our commitment to your satisfaction extends beyond the project completion.</p>
-                <div class="image-placeholder"></div>
-            </div>
         </div>
     </div>
-</section>
 
-
-    <section class="pricing-section">
-        <div class="pricing-container">
-            <div class="pricing-column">
-                <h2>Starter Plan</h2>
-                <p class="price">£500</p>
-                <ul>
-                    <li>Basic responsive website design</li>
-                    <li>Up to 3 pages</li>
-                    <li>1 contact form</li>
-                    <li>Basic SEO optimization</li>
-                    <li>1 round of revisions</li>
-                    <li>Social media integration</li>
-                    <li>1 week delivery</li>
-                    <li>30 days of support</li>
-                </ul>
-                <button class="learn-more">Learn More</button>
-            </div>
-            <div class="pricing-column">
-                <h2>Pro Plan</h2>
-                <p class="price">£950</p>
-                <ul>
-                    <li>Advanced responsive website design</li>
-                    <li>Up to 7 pages</li>
-                    <li>2 contact forms</li>
-                    <li>Comprehensive SEO package</li>
-                    <li>3 rounds of revisions</li>
-                    <li>Social media integration</li>
-                    <li>Basic animations</li>
-                    <li>Blog setup</li>
-                    <li>2 weeks delivery</li>
-                    <li>60 days of support</li>
-                </ul>
-                <button class="learn-more">Learn More</button>
-            </div>
-            <div class="pricing-column">
-                <h2>Specialty Plan</h2>
-                <p class="price">£3000</p>
-                <ul>
-                    <li>Custom responsive website design</li>
-                    <li>Unlimited pages</li>
-                    <li>Multiple custom forms</li>
-                    <li>Advanced SEO & analytics setup</li>
-                    <li>Unlimited revisions</li>
-                    <li>Advanced social media integration</li>
-                    <li>Complex animations & interactions</li>
-                    <li>E-commerce functionality</li>
-                    <li>Custom CMS integration</li>
-                    <li>4 weeks delivery</li>
-                    <li>6 months of support & maintenance</li>
-                </ul>
-                <button class="learn-more">Learn More</button>
-            </div>
-        </div>
-    </section>
-    
-    <div class="section-divider">
-        <div class="divider-shape"></div>
+    <div class="bottom-icons">
+        <img src="placeholder-icon.png" alt="Bottom Icon">
+        <img src="placeholder-icon.png" alt="Bottom Icon">
+        <img src="placeholder-icon.png" alt="Bottom Icon">
     </div>
-
-    <section class="additional-info">
-        <h2>Found Someone Cheaper?</h2>
-        <div class="info-grid">
-            <div class="info-item">
-                <h3>Unmatched Expertise</h3>
-                <p>Our team of seasoned professionals brings years of industry experience to every project, ensuring top-notch quality that cheaper alternatives can't match.</p>
-            </div>
-            <div class="info-item">
-                <h3>Cutting-Edge Technology</h3>
-                <p>We invest in the latest tools and technologies to deliver state-of-the-art websites that stand out from the crowd and provide a superior user experience.</p>
-            </div>
-            <div class="info-item">
-                <h3>Personalized Service</h3>
-                <p>Unlike budget options, we offer dedicated support and personalized attention to ensure your vision is brought to life exactly as you imagined it.</p>
-            </div>
-            <div class="info-item">
-                <h3>Long-Term Value</h3>
-                <p>Our websites are built to last, with scalable solutions that grow with your business, providing better ROI than cheaper, short-term fixes.</p>
-            </div>
-        </div>
-    </section>
-
-<section class="testimonials">
-  <h2>What Our Clients Say</h2>
-  <div class="testimonial-grid">
-    <div class="testimonial-card">
-      <img src="john-doe.jpg" alt="John Doe">
-      <h3>John Doe</h3>
-      <p class="title">Small Business Owner</p>
-      <p class="quote">"WebsiteAnimation.co.uk transformed our online presence with a sleek and responsive website. Their attention to detail and SEO expertise helped us rank higher on Google, bringing in more customers than ever before!"</p>
-    </div>
-    <div class="testimonial-card">
-      <img src="jane-smith.jpg" alt="Jane Smith">
-      <h3>Jane Smith</h3>
-      <p class="title">Marketing Manager</p>
-      <p class="quote">"Working with Joshua Josef Mort was a breeze! He listened to our needs and delivered a stunning website that perfectly reflects our brand. His commitment to quality and quick turnaround exceeded our expectations."</p>
-    </div>
-    <div class="testimonial-card">
-      <img src="david-johnson.jpg" alt="David Johnson">
-      <h3>David Johnson</h3>
-      <p class="title">Entrepreneur</p>
-      <p class="quote">"I'm thrilled with the animations WebsiteAnimation.co.uk created for my startup's website. The interactive elements they integrated have truly elevated our user experience. I highly recommend their services!"</p>
-    </div>
-    <div class="testimonial-card">
-      <img src="sarah-brown.jpg" alt="Sarah Brown">
-      <h3>Sarah Brown</h3>
-      <p class="title">E-commerce Store Owner</p>
-      <p class="quote">"Choosing Joshua Josef Mort was the best decision for my online store. His e-commerce expertise and seamless integration of payment gateways made it easy for us to sell our products online. Thank you!"</p>
-    </div>
-    <div class="testimonial-card">
-      <img src="michael-clark.jpg" alt="Michael Clark">
-      <h3>Michael Clark</h3>
-      <p class="title">Non-profit Organization Director</p>
-      <p class="quote">"WebsiteAnimation.co.uk crafted a professional and user-friendly website for our non-profit. Their dedication to our cause and ability to convey our mission through design and animation was exceptional. We're grateful for their support!"</p>
-    </div>
-  </div>
-</section>
-
-<section class="services-showcase">
-  <div class="video-background">
-    <video autoplay muted id="myVideo">
-      <!-- We'll set the source dynamically in JavaScript -->
-    </video>
-  </div>
-  
-  <div class="content-overlay">
-    <h2>Our Animation Services</h2>
-    <div class="services-grid">
-      <div class="service-item">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Website Design Animation</h3>
-        <p>Enhance your website with interactive animations that captivate users and improve engagement.</p>
-      </div>
-      <div class="service-item">
-        <i class="fas fa-video"></i>
-        <h3>Video Production</h3>
-        <p>From concept to completion, we create stunning videos for all platforms, including promotional and explainer videos.</p>
-      </div>
-      <div class="service-item">
-        <i class="fas fa-user-astronaut"></i>
-        <h3>Character Animation</h3>
-        <p>Bring your characters to life with expressive animations that tell a story and connect with your audience.</p>
-      </div>
-      <div class="service-item">
-        <i class="fas fa-magic"></i>
-        <h3>2D Effects</h3>
-        <p>Add dynamic 2D effects to your projects, including motion graphics and visual effects that enhance storytelling.</p>
-      </div>
-      <div class="service-item">
-        <i class="fab fa-youtube"></i>
-        <h3>YouTube Content</h3>
-        <p>Create engaging animations for your YouTube channel, boosting your brand and growing your audience.</p>
-      </div>
-      <div class="service-item">
-        <i class="fas fa-chart-line"></i>
-        <h3>Business Presentations</h3>
-        <p>Transform your presentations with animated slides that clearly communicate your message and captivate your audience.</p>
-      </div>
-      <div class="service-item">
-        <i class="fas fa-ad"></i>
-        <h3>Animated Ads</h3>
-        <p>Stand out with eye-catching animated advertisements that grab attention and drive conversions.</p>
-      </div>
-    </div>
-  </div>
-  
-  <div class="details-section">
-    <h2>Why Choose Us?</h2>
-    <p>Our team of expert animators and designers is dedicated to delivering high-quality animations tailored to your needs. We offer a range of packages to suit different budgets and project scopes, ensuring you get the best value for your investment.</p>
-    <ul>
-      <li><strong>Custom Animations:</strong> Tailored animations that align with your brand and message.</li>
-      <li><strong>Professional Quality:</strong> High-quality production values that enhance your project.</li>
-      <li><strong>Creative Solutions:</strong> Innovative ideas and creative solutions that make your content stand out.</li>
-      <li><strong>Timely Delivery:</strong> Reliable timelines and efficient workflows to meet your deadlines.</li>
-      <li><strong>Customer Support:</strong> Dedicated support to assist you throughout the project lifecycle.</li>
-    </ul>
-    <p>Contact us today to discuss your animation needs and discover how we can bring your vision to life.</p>
-  </div>
-</section>
-
-</section>
-
-<script>
-  const video = document.getElementById('myVideo');
-  const videoSources = [
-    'videos/Blender Stock Videos/1.mp4',
-    'videos/Blender Stock Videos/2.mp4',
-    'videos/Blender Stock Videos/3.mp4',
-    'videos/Blender Stock Videos/4.mp4',
-    'videos/Blender Stock Videos/5.mp4',
-    'videos/Blender Stock Videos/6.mp4',
-    'videos/Blender Stock Videos/7.mp4',
-    'videos/Blender Stock Videos/8.mp4',
-    'videos/Blender Stock Videos/9.mp4'
-  ];
-  let currentSourceIndex = 0;
-
-  function changeVideo() {
-    currentSourceIndex = (currentSourceIndex + 1) % videoSources.length;
-    video.src = videoSources[currentSourceIndex];
-    
-    // Set a random start time
-    video.addEventListener('loadedmetadata', function() {
-      const randomStartTime = Math.random() * video.duration;
-      video.currentTime = randomStartTime;
-      video.play();
-    }, { once: true });
-  }
-
-  // Initial video load
-  changeVideo();
-
-  // Change video every 10 seconds
-  setInterval(changeVideo, 10000);
-</script>
-
-</section>
-
-<section class="animation-showcase">
-  <div class="animation-header">
-    <h2>Explore Our Animation Portfolio</h2>
-    <p>Discover the diverse range of animations we offer, tailored to enhance your digital experience.</p>
-  </div>
-
-  <div class="animation-grid">
-    <div class="animation-item">
-      <video autoplay loop muted class="animation-thumb">
-        <source src="videos/Blender Stock Videos/1.mp4" type="video/mp4">
-      </video>
-      <h3>Website Animation</h3>
-      <p>Enhance your website with interactive animations that captivate users.</p>
-    </div>
-    <div class="animation-item">
-      <video autoplay loop muted class="animation-thumb">
-        <source src="videos/Blender Stock Videos/2.mp4" type="video/mp4">
-      </video>
-      <h3>Character Animation</h3>
-      <p>Bring your characters to life with engaging animations.</p>
-    </div>
-    <div class="animation-item">
-      <video autoplay loop muted class="animation-thumb">
-        <source src="videos/Blender Stock Videos/3.mp4" type="video/mp4">
-      </video>
-      <h3>2D Effects</h3>
-      <p>Add dynamic 2D effects to enhance storytelling.</p>
-    </div>
-    <div class="animation-item">
-      <video autoplay loop muted class="animation-thumb">
-        <source src="videos/Blender Stock Videos/4.mp4" type="video/mp4">
-      </video>
-      <h3>Video Production</h3>
-      <p>From concept to completion, we create stunning video content.</p>
-    </div>
-  </div>
-
-
-<section class="freelancer-contact-section">
-        <div class="freelancer-contact-box">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Comments" required></textarea>
-                <div class="freelancer-checkbox-group">
-                    <label><input type="checkbox" name="services" value="web-design" onclick="togglePricingPlans(this)"> Web Design</label>
-                    <label><input type="checkbox" name="services" value="animation"> Animation</label>
-                    <label><input type="checkbox" name="services" value="graphic-design"> Graphic Design</label>
-                    <label><input type="checkbox" name="services" value="video-editing"> Video/Image Editing</label>
-                    <label><input type="checkbox" name="services" value="wish-to-discuss"> Wish to Discuss</label>
-                </div>
-                <div id="pricing-options" style="display: none;">
-                    <h3>Select a Pricing Plan:</h3>
-                    <select name="pricing-plan">
-                        <option value="">-- Select a Plan --</option>
-                        <option value="starter-plan">Starter Plan (£500)</option>
-                        <option value="pro-plan">Pro Plan (£950)</option>
-                        <option value="specialty-plan">Specialty Plan (£3000)</option>
-                        <option value="wish-to-discuss">Wish to Discuss</option>
-                    </select>
-                </div>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-
-    <script>
-        function togglePricingPlans(checkbox) {
-            var pricingOptions = document.getElementById('pricing-options');
-            if (checkbox.checked && checkbox.value === 'web-design') {
-                pricingOptions.style.display = 'block';
-            } else {
-                pricingOptions.style.display = 'none';
-            }
-        }
-    </script>
-
-    <section class="freelance-faq">
-        <div class="freelance-container">
-            <h6 class="freelance-faq-title">Frequently Asked Questions</h6>
-            <div class="freelance-faq-item">
-                <h7 class="freelance-faq-question">What are your pricing options?</h7>
-                <p>Our pricing is tailored to fit the unique needs of each project. We offer flexible packages based on complexity and features, including basic, mid-range, and premium options. Contact us for a personalized quote and to discuss the best plan for your business.</p>
-            </div>
-            <div class="freelance-faq-item">
-                <h7 class="freelance-faq-question">Can you integrate animations into my website?</h7>
-                <p>Yes, we specialize in integrating high-quality animations using tools like Lottie, After Effects, Blender, and Spline. Whether you need animated backgrounds, interactive elements, or character animations, we can bring your vision to life.</p>
-            </div>
-            <div class="freelance-faq-item">
-                <h7 class="freelance-faq-question">How long does the design process take?</h7>
-                <p>The timeline varies depending on the project's complexity. Typically, a standard website design takes between 4 to 6 weeks from initial consultation to launch. We will provide a detailed timeline during the proposal stage.</p>
-            </div>
-            <div class="freelance-faq-item">
-                <h7 class="freelance-faq-question">What platforms do you use for website design?</h7>
-                <p>We use WIX, Webflow, and CSS coding to create our websites. These platforms allow us to build responsive, visually appealing, and functional websites tailored to your needs.</p>
-            </div>
-            <div class="freelance-faq-item">
-                <h7 class="freelance-faq-question">Can I update my website content myself?</h7>
-                <p>Absolutely! Our websites are built on user-friendly platforms like WIX and Webflow, allowing you to easily update and manage your content. However, I am always available for maintenance and support, which is why we include a continued monthly fee for ongoing services.</p>
-            </div>
-            <div class="freelance-faq-item">
-                <h7 class="freelance-faq-question">What is included in the contract?</h7>
-                <p>Our contracts outline the project scope, deliverables, timeline, payment schedule, and terms and conditions. This ensures transparency and sets clear expectations for both parties. We are happy to walk you through the contract and answer any questions.</p>
-            </div>
-            <div class="freelance-faq-item">
-                <h7 class="freelance-faq-question">Do you require a deposit?</h7>
-                <p>Yes, we require a 30% non-refundable deposit before starting the design work. This secures your project in our schedule and covers initial design efforts. The remaining balance is due upon project completion and your approval.</p>
-            </div>
-            <div class="freelance-faq-item">
-                <h7 class="freelance-faq-question">How do we communicate during the project?</h7>
-                <p>We maintain clear and consistent communication through emails, phone calls, and project management tools. This ensures you are updated on progress and can provide feedback throughout the process.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="freelance-help-section">
-        <div class="freelance-container">
-            <h8 class="freelance-help-title">Need Help?</h8>
-            <p>Our team is here to assist you with any questions or concerns. Don't hesitate to reach out!</p>
-            <a href="#contact" class="freelance-cta-button">Contact Us</a>
-        </div>
-    </section>
-
-
-
-
-    </section>
-
-     <footer class="footer">
-        <div class="footer-triangle left"></div>
-        <div class="footer-triangle right"></div>
-        <div class="footer-content">
-            <div class="footer-logo-section">
-                <div class="footer-logo">
-                    <img src="images/Logo 1.png" alt="Company Logo">
-                </div>
-                <div class="footer-contact">
-                    <h3>Contact Us</h3>
-                    <div class="contact-item">
-                        <img src="images/Icons/Footer Contact Icons/email.png" alt="Email">
-                        <span>info@example.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <img src="images/Icons/Footer Contact Icons/phone.png" alt="Phone">
-                        <span>+1 (123) 456-7890</span>
-                    </div>
-                    <div class="contact-item">
-                        <img src="images/Icons/Footer Contact Icons/location.png" alt="Location">
-                        <span>123 Main St, City, Country</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-divider"></div>
-            <div class="footer-section">
-                <h3>Menu</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-divider"></div>
-            <div class="footer-section">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Service 1</a></li>
-                    <li><a href="#">Service 2</a></li>
-                    <li><a href="#">Service 3</a></li>
-                    <li><a href="#">Service 4</a></li>
-                </ul>
-            </div>
-            <div class="footer-divider"></div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <div class="social-icons">
-                    <a href="#"><img src="images/Icons/Footer Socials Icons/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/Icons/Footer Socials Icons/twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="images/Icons/Footer Socials Icons/instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="images/Icons/Footer Socials Icons/linkedin.png" alt="LinkedIn"></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-    </div> <!-- End of wrapper -->
-
-
-    <!-- Slideshow and Navbar Script -->
-    <script>
-        let slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}
-            slides[slideIndex-1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change image every 5 seconds
-        }
-
-        // Navbar scroll behavior
-        window.addEventListener('scroll', function() {
-            var header = document.getElementById('header');
-            var freelancer = document.getElementById('freelancer');
-            var freelancerTop = freelancer.getBoundingClientRect().top;
-            
-            if (freelancerTop <= 0) {
-                header.classList.add('fixed-top');
-            } else {
-                header.classList.remove('fixed-top');
-            }
-        });
-    </script>
 </body>
 </html>
+

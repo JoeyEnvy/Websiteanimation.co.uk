@@ -1,30 +1,257 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Animation Services - Creative Animations Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;700&family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animation.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>My Creative Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="webdesign.html">Web Design</a></li>
-                <li><a href="animation.html">Animation</a></li>
-                <li><a href="graphicdesign.html">Graphic Design</a></li>
-                <li><a href="videoimagediting.html">Video/Image Editing</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Animation</h2>
-        <p>Here is my work in animation.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Creative Portfolio</p>
+    <div class="wrapper">
+        <header id="header">
+            <div class="navbar-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/images/animation_logo.png" alt="Creative Animations Studio Logo" width="auto" height="50">
+                    </a>
+                </div>
+                <nav id="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#about" class="dropbtn">About</a>
+                            <div class="dropdown-content">
+                                <a href="our-process.html">Our Process</a>
+                                <a href="team.html">Our Team</a>
+                                <a href="technology.html">Technology</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#services" class="dropbtn">Services</a>
+                            <div class="dropdown-content">
+                                <a href="2d-animation.html">2D Animation</a>
+                                <a href="3d-animation.html">3D Animation</a>
+                                <a href="motion-graphics.html">Motion Graphics</a>
+                                <a href="vfx.html">Visual Effects</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#portfolio" class="dropbtn">Portfolio</a>
+                            <div class="dropdown-content">
+                                <a href="commercial.html">Commercial</a>
+                                <a href="film.html">Film</a>
+                                <a href="music-videos.html">Music Videos</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Bring Your Ideas to Life</h1>
+                <p>Cutting-edge animation services for all your creative needs.</p>
+            </div>
+            <button class="cta-button">Explore Our Work</button>
+        </div>
+
+        <div class="services-overview">
+            <h2>Our Animation Services</h2>
+            <p>From concept to final render, we offer a wide range of animation services to suit your project needs.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>2D Animation</h3>
+                    <img src="images/2d-animation.jpg" alt="2D Animation">
+                    <p>Traditional and digital 2D animation for commercials, explainer videos, and more.</p>
+                </div>
+                <div class="service-card">
+                    <h3>3D Animation</h3>
+                    <img src="images/3d-animation.jpg" alt="3D Animation">
+                    <p>Stunning 3D animations for film, TV, games, and product visualizations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Motion Graphics</h3>
+                    <img src="images/motion-graphics.jpg" alt="Motion Graphics">
+                    <p>Eye-catching motion graphics for titles, logos, and infographics.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Character Animation</h3>
+                    <img src="images/character-animation.jpg" alt="Character Animation">
+                    <p>Bring characters to life with expressive and fluid animations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="software-section">
+            <h2>Our Animation Tools</h2>
+            <div class="software-grid">
+                <div class="software-item">
+                    <img src="images/blender-logo.png" alt="Blender">
+                    <h3>Blender</h3>
+                    <p>Open-source 3D creation suite for modeling, animation, and rendering.</p>
+                </div>
+                <div class="software-item">
+                    <img src="images/maya-logo.png" alt="Maya">
+                    <h3>Autodesk Maya</h3>
+                    <p>Industry-standard software for 3D animation, modeling, and visual effects.</p>
+                </div>
+                <div class="software-item">
+                    <img src="images/after-effects-logo.png" alt="After Effects">
+                    <h3>Adobe After Effects</h3>
+                    <p>Professional motion graphics and visual effects software.</p>
+                </div>
+                <div class="software-item">
+                    <img src="images/toon-boom-logo.png" alt="Toon Boom Harmony">
+                    <h3>Toon Boom Harmony</h3>
+                    <p>Leading software for 2D animation production.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-section">
+            <h2>Featured Animation Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Animated Short Film</h3>
+                    <p>A heartwarming 3D animated short about friendship and adventure.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Product Visualization</h3>
+                    <p>Sleek 3D animation showcasing a new tech gadget's features.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project3.jpg" alt="Project 3">
+                    <h3>Explainer Video</h3>
+                    <p>Engaging 2D animated explainer video for a fintech startup.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project4.jpg" alt="Project 4">
+                    <h3>Music Video Animation</h3>
+                    <p>Vibrant motion graphics for a popular artist's latest music video.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="process-section">
+            <h2>Our Animation Process</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <h3>1. Concept Development</h3>
+                    <p>We work closely with you to develop and refine your ideas.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Storyboarding</h3>
+                    <p>Creating detailed storyboards to visualize the animation sequence.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Asset Creation</h3>
+                    <p>Designing and modeling characters, environments, and other assets.</p>
+                </div>
+                <div class="step">
+                    <h3>4. Animation</h3>
+                    <p>Bringing the assets to life with fluid and expressive animation.</p>
+                </div>
+                <div class="step">
+                    <h3>5. Rendering and Post-Production</h3>
+                    <p>Final rendering, compositing, and adding finishing touches.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Let's Animate Your Vision</h2>
+            <div class="contact-buttons">
+                <a href="https://wa.me/your-whatsapp-number" class="contact-button whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                <a href="mailto:your-email@example.com" class="contact-button email"><i class="fas fa-envelope"></i> Email</a>
+                <a href="tel:your-phone-number" class="contact-button call"><i class="fas fa-phone"></i> Call</a>
+            </div>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Tell us about your project" required></textarea>
+                <div class="form-checkboxes">
+                    <label><input type="checkbox" name="service" value="2D Animation"> 2D Animation</label>
+                    <label><input type="checkbox" name="service" value="3D Animation"> 3D Animation</label>
+                    <label><input type="checkbox" name="service" value="Motion Graphics"> Motion Graphics</label>
+                    <label><input type="checkbox" name="service" value="Character Animation"> Character Animation</label>
+                </div>
+                <button type="submit" class="submit-button">Get a Quote</button>
+            </form>
+        </div>
+    </div>
+
+     <footer class="footer">
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+     <footer class="footer">
+        <div class="footer-triangle left"></div>
+        <div class="footer-triangle right"></div>
+        <div class="footer-content">
+            <div class="footer-logo-section">
+                <div class="footer-logo">
+                    <img src="images/Logo 1.png" alt="Company Logo">
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <div class="contact-item">
+                        <img src="images/Icons/Footer Contact Icons/email.png" alt="Email">
+                        <span>info@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/Icons/Footer Contact Icons/phone.png" alt="Phone">
+                        <span>+1 (123) 456-7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/Icons/Footer Contact Icons/location.png" alt="Location">
+                        <span>123 Main St, City, Country</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Service 3</a></li>
+                    <li><a href="#">Service 4</a></li>
+                </ul>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="images/Icons/Footer Socials Icons/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="images/Icons/Footer Socials Icons/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="images/Icons/Footer Socials Icons/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="images/Icons/Footer Socials Icons/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
     </footer>
+
+
 </body>
 </html>
+
