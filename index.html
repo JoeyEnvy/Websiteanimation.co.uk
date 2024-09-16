@@ -3,15 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wobbling Wave Effect</title>
+    <title>Your Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wave-container">
-        <svg class="wave" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M0,0 C20,50 20,50 0,100 L100,100 L100,0 Z" fill="#0e0f3b" />
-        </svg>
-    </div>
-    <div class="colored-half"></div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Web Design</a>
+                    <a href="#">Animation</a>
+                    <a href="#">Graphic Design/Printing</a>
+                    <a href="#">Video Production</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                    <a href="#">Information</a>
+                    <a href="#">How We Work</a>
+                    <a href="#">The Process</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Portfolio</a>
+                <div class="dropdown-content">
+                    <a href="#">Clients</a>
+                    <a href="#">The Process</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Contact</a>
+                <div class="dropdown-content">
+                    <a href="#">FAQ</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="nav-underline"></div>
+    <main>
+        <div class="left-section"></div>
+        <div class="right-section"></div>
+        <div class="wave-container">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#4c0072" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,224C384,224,480,192,576,181.3C672,171,768,181,864,181.3C960,181,1056,171,1152,170.7C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
+
