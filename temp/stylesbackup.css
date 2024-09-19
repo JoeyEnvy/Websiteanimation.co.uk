@@ -1,4 +1,4 @@
-body, html {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -14,7 +14,7 @@ nav {
     left: 25vw;
     transform: translateX(-50%);
     z-index: 10;
-} 
+}
 
 nav ul {
     list-style-type: none;
@@ -73,98 +73,85 @@ main {
 }
 
 .left-section {
-    width: 55vw;
+    flex-grow: 1;
+    height: 100vh;
     background-color: white;
+    position: relative;
+    z-index: 3;
+}
+
+#lottie-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+
+#lottie-container dotlottie-player {
+    height: 100%;
+    width: auto;
 }
 
 .right-section {
     width: 45vw;
     background-color: #4c0072;
-    position: fixed;
+    position: relative;
+    height: 100vh;
+    z-index: 3;
+    overflow: visible;
+}
+
+#right-lottie-container {
+    position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
-    z-index: 1;
-    overflow: hidden;
+    z-index: 4;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+
+#right-lottie-container dotlottie-player {
+    height: 100%;
+    width: auto;
 }
 
 spline-viewer {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 5;
 }
 
-.wave-container {
-    position: fixed;
-    top: 0;
-    left: 55vw;
-    width: 100px;
-    height: 100%;
-    overflow: hidden;
-    z-index: 2;
-    transform: rotate(80deg);
+.bottom-div {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 55px;
+   background-color: #AEA4FA;
+   z-index: 1000;
 }
 
-.wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    animation: 
-        wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite,
-        swell 7s ease-in-out infinite alternate;
-}
-
-.wave path {
-    fill: #4c0072;
-}
-
-@keyframes wave {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-50%, 0, 0);
-    }
-}
-
-@keyframes swell {
-    0% {
-        transform: translate3d(0, -25px, 0);
-    }
-    100% {
-        transform: translate3d(0, 25px, 0);
-    }
-}
-
-.center-svg-container {
-    position: fixed;
-    top: 0;
-    left: 55vw;
-    height: 100vh;
-    width: 100px;
-    overflow: hidden;
-    z-index: 3;
-    transform: translateX(-100%);
-}
-
-.center-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    max-width: none;
+.top-line {
+   position: fixed;
+   bottom: 55px;
+   left: 0;
+   width: 100%;
+   height: 5px;
+   background-color: #07407b;
+   z-index: 1001;
 }
 
 @media (max-width: 1200px) {
-    .center-svg-container {
-        left: 55vw;
-    }
-    
-    .wave-container {
-        left: 55vw;
-    }
+   .right-section {
+       width: 45vw;
+   }
 }

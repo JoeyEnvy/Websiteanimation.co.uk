@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     function adjustLottieSize() {
         var leftLottie = document.querySelector('#lottie-container dotlottie-player');
+        var rightLottie = document.querySelector('#right-lottie-container dotlottie-player');
         var leftSection = document.querySelector('.left-section');
+        var rightSection = document.querySelector('.right-section');
 
         if (leftLottie && leftSection) {
             leftLottie.style.height = '100%';
@@ -11,6 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
             if (lottieWidth > maxWidth) {
                 leftLottie.style.width = '100%';
                 leftLottie.style.height = 'auto';
+            }
+        }
+
+        if (rightLottie && rightSection) {
+            rightLottie.style.height = '100%';
+            rightLottie.style.width = 'auto';
+            var lottieWidth = rightLottie.offsetWidth;
+            var maxWidth = rightSection.offsetWidth;
+            if (lottieWidth > maxWidth) {
+                rightLottie.style.width = '100%';
+                rightLottie.style.height = 'auto';
             }
         }
     }

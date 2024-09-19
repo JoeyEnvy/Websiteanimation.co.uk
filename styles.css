@@ -1,4 +1,4 @@
-body, html {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -66,89 +66,88 @@ nav ul li a {
     z-index: 10;
 }
 
-#lottie-container {
-    position: fixed;
-    top: 0; /* Keep this as is */
-    left: 0; /* Keep this as is */
-    width: 210px; /* Width of the left Lottie */
-    height: 100vh; /* Full height */
-    z-index: 1; /* Behind everything else */
-    pointer-events: none; /* Prevent interaction */
-}
-
 main {
-    position: relative; /* Relative positioning for main content */
-    height: 100vh; /* Full height of viewport */
+    position: relative;
+    height: 100vh;
+    display: flex;
 }
 
 .left-section {
-    width: 55vw; /* Left section takes up more space */
-    height: 100vh; /* Full height */
-    background-color: white; /* White background for left section */
-    position: relative; /* Relative positioning */
-    z-index: 3; /* Above the main content */
+    flex-grow: 1;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    z-index: 3;
+}
+
+#lottie-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+}
+
+#lottie-container dotlottie-player {
+    height: 100%;
+    width: auto;
 }
 
 .right-section {
-    width: 45vw; /* Right section takes up less space */
-    background-color: #4c0072; /* Purple background for right section */
-    position: fixed; /* Fixed positioning */
-    top: 0; /* Align to top */
-    right: 0; /* Align to right edge */
-    height: 100%; /* Full height */
-    z-index: 3; /* Above the main content */
+    width: 45vw;
+    background-color: #4c0072;
+    position: relative;
+    height: 100vh;
+    z-index: 3;
+    overflow: visible;
 }
 
-/* Adjusted for full height */
-#right-lottie-container {
-   position:absolute; 
-   top :0; /* Align to top for full height */
-   left :0; 
-   transform :translateX(-50%); 
-   width :210px; 
-   height :100vh; /* Set to full viewport height */
-   z-index :4; 
-   pointer-events :none; 
-   overflow :visible; 
-}
-
-#right-lottie-container dotlottie-player {
-   width :100%; 
-   height :100%; 
+#spline-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
 }
 
 spline-viewer {
-   width :50vw; 
-   height :100%; 
-   position :absolute; 
-   top :0; 
-   left :0; 
-   z-index :5; 
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: 5;
 }
 
 .bottom-div {
-   position :fixed; 
-   bottom :0; 
-   left :0; 
-   width :100%; 
-   height :55px; 
-   background-color :#AEA4FA; 
-   z-index :1000; 
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 55px;
+   background-color: #AEA4FA;
+   z-index: 1000;
 }
 
 .top-line {
-   position :fixed; 
-   bottom :55px; 
-   left :0; 
-   width :100%; 
-   height :5px; 
-   background-color :#07407b; 
-   z-index :1001; 
+   position: fixed;
+   bottom: 55px;
+   left: 0;
+   width: 100%;
+   height: 5px;
+   background-color: #07407b;
+   z-index: 1001;
 }
 
-@media (max-width :1200px) {
+@media (max-width: 1200px) {
    .right-section {
-       width :45vw; /* Maintain responsive design for smaller screens */
+       width: 45vw;
    }
 }
-

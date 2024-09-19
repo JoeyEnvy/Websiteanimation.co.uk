@@ -7,67 +7,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     
-	<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.26/build/spline-viewer.js"></script>
-	<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.26/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body>
-	<nav>
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li class="dropdown">
-				<a href="#" class="dropbtn">Services</a>
-				<div class="dropdown-content">
-					<a href="#">Web Design</a>
-					<a href="#">Animation</a>
-					<a href="#">Graphic Design/Printing</a>
-					<a href="#">Video Production</a>
-				</div>
-			</li>
-			<li class="dropdown">
-				<a href="#" class="dropbtn">About</a>
-				<div class="dropdown-content">
-					<a href="#">Information</a>
-					<a href="#">How We Work</a>
-					<a href="#">The Process</a>
-				</div>
-			</li>
-			<li class="dropdown">
-				<a href="#" class="dropbtn">Portfolio</a>
-				<div class="dropdown-content">
-					<a href="#">Clients</a>
-					<a href="#">The Process</a>
-				</div>
-			</li>
-			<li class="dropdown">
-				<a href="#" class="dropbtn">Contact</a>
-				<div class="dropdown-content">
-					<a href="#">FAQ</a>
-					<a href="#">Testimonials</a>
-					<a href="#">Contact</a>
-				</div>
-			</li>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Web Design</a>
+                    <a href="#">Animation</a>
+                    <a href="#">Graphic Design/Printing</a>
+                    <a href="#">Video Production</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                    <a href="#">Information</a>
+                    <a href="#">How We Work</a>
+                    <a href="#">The Process</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Portfolio</a>
+                <div class="dropdown-content">
+                    <a href="#">Clients</a>
+                    <a href="#">The Process</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Contact</a>
+                <div class="dropdown-content">
+                    <a href="#">FAQ</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Contact</a>
+                </div>
+            </li>
         </ul>
-	</nav>
+    </nav>
 
-<div class="nav-underline"></div>
+    <div class="nav-underline"></div>
 
-<div id="lottie-container">
-        <dotlottie-player src="https://lottie.host/34456a05-b33c-4d14-829a-2d798d8210ef/wAmskpOvVO.json" background="transparent" speed="1" style="width: 210px; height: 100vh;" loop autoplay></dotlottie-player>
-</div>
+    <main>    
+        <div class="left-section">
+            <div id="lottie-container">
+                <dotlottie-player src="https://lottie.host/34456a05-b33c-4d14-829a-2d798d8210ef/wAmskpOvVO.json" background="transparent" speed="0.5" loop autoplay></dotlottie-player>
+            </div>
+        </div>    
+        <div class="right-section">    
+            <div id="spline-container">    
+            </div>    
+            <spline-viewer hint loading-anim-type="spinner-small-light" url="https://prod.spline.design/hmDd9iNTmdRqvTKU/scene.splinecode"></spline-viewer>    
+        </div>    
+        <div class="top-line"></div>    
+        <div class="bottom-div"></div>    
+    </main>
 
-<main>	
-        <div class="left-section"></div>	
-        <div class="right-section">	
-            <div id="right-lottie-container">	
-                <dotlottie-player src="https://lottie.host/34456a05-b33c-4d14-829a-2d798d8210ef/wAmskpOvVO.json" background="transparent" speed="1" loop autoplay></dotlottie-player>	
-            </div>	
-            <spline-viewer hint loading-anim-type="spinner-small-light" url="https://prod.spline.design/hmDd9iNTmdRqvTKU/scene.splinecode"></spline-viewer>	
-        </div>	
-        <div class="top-line"></div>	
-        <div class="bottom-div"></div>	
-</main>
+    <script src="script.js"></script>
 
-<script src="script.js"></script>
-
-</body>	
+</body>    
 </html>
